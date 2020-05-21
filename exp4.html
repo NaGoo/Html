@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>highlight</title>
+</head>
+<body>
+    <p>The National Anthem of India is played or sung on various occasions. Instructions have been issued from time to time about the correct versions of the Anthem, the occasions on which these are to be played or sung, and about the need for paying respect to the anthem by observance of proper decorum on such occasions. The substance of these instructions has been embodied in the information sheet issued by the government of India for general information and guidance. The approximate duration of the Full Version of National Anthem of India is 52 seconds and 20 seconds for shorter version</p>
+<script>
+    const abc=document.querySelector("p");
+    abc.innerHTML = abc.innerText
+     .split(' ')
+     .map(word => word.length > 8 ?`<span style="background-color:yellow">${ word }</span>`:word)
+     .join(' ');
+</script>
+</body>
+</html>
