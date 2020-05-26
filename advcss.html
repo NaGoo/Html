@@ -1,3 +1,58 @@
+<!-- 1)animation Exercise-->
+
+<!DOCTYPE html>
+<head><title>animation</title></head>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: darkblue;
+        position: relative;
+        animation-name: square;
+        animation-duration: 3s;
+    
+            
+        }
+        @keyframes square {
+            0%  {background-color: darkblue; left: 0px; top: 0px;}
+            50%  {background-color:red; left: 200px; top: 200px;}
+            100%  {background-color:yellow; left: 100px; top: 100px;}
+        }
+    
+</style>
+<body>
+    <div></div>
+</body>
+</html>
+
+
+
+
+<!-- 2)Transform a square into circle-->
+
+<!DOCTYPE html>
+<head><title>transition</title></head>
+<style>
+  div{
+      width: 150px;
+      height: 150px;
+      background-image: linear-gradient(teal,yellowgreen);
+  }
+  div:hover{
+      border-radius: 100px;
+      animation-duration: 2s;
+      background-image: linear-gradient(blue,red);
+  }
+</style>
+<body>
+ <div></div>
+</body>
+</html>
+
+
+
+<!--3)Shadow effect -->
+
 <!DOCTYPE html>
 <head><title>shadow</title></head>
 <style>
@@ -24,44 +79,252 @@
 </body>
 </html>
 
-<!DOCTYPE html>
-<head><title>animation</title></head>
-<style>
-    div{
-        width: 100px;
-        height: 100px;
-        background-color: darkblue;
-        position: relative;
-        animation-name: square;
-        animation-duration: 3s;
-    
-            
-        }
-        @keyframes square {
-            0%  {background-color: darkblue; left: 0px; top: 0px;}
-            50%  {background-color:red; left: 200px; top: 200px;}
-            100%  {background-color:yellow; left: 100px; top: 100px;}
-        }
-    
-</style>
-<body>
-    <div></div>
-</body>
-</html>-->
-
-<!--flex-direction: column;
-    flex-direction:row-reverse;
-    flex-direction: column-reverse;
-
-    flex-wrap:wrap;
-    flex-wrap:wrap-reverse;-->
+<!--4)parent & child diff arrangements -->
 
 <!DOCTYPE html>
-<head><title>flexbox</title></head>
+<head><title>flexbox row with nowrap</title></head>
 <style>
 .abc{
     display:flex;
     flex-direction: row; 
+    width: 600px;
+    height: 600px;
+    background-color: teal;
+    flex-wrap: nowrap;
+    
+ }
+.x{
+    width: 100px;
+    height:100px;
+    background-color: yellowgreen;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+</style>
+<body>
+<div class="abc">
+    <div class="x" >1</div>
+    <div class="x" >2</div>
+    <div class="x" >3</div>
+    <div class="x" >4</div>
+    <div class="x" >5</div>
+</div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<head><title>flexbox row with wrap</title></head>
+<style>
+.abc{
+    display:flex;
+    flex-direction: row; 
+    width: 400px;
+    height: 600px;
+    background-color: teal;
+    flex-wrap: wrap;
+    
+    
+ }
+.x{
+    width: 100px;
+    height:100px;
+    background-color: yellowgreen;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+</style>
+<body>
+<div class="abc">
+    <div class="x" >1</div>
+    <div class="x" >2</div>
+    <div class="x" >3</div>
+    <div class="x" >4</div>
+    <div class="x" >5</div>
+</div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<head><title>flexbox row with wrap rev</title></head>
+<style>
+.abc{
+    display:flex;
+    flex-direction: row; 
+    width: 400px;
+    height: 600px;
+    background-color: teal;
+    flex-wrap: wrap-reverse;
+    
+    
+ }
+.x{
+    width: 100px;
+    height:100px;
+    background-color: yellowgreen;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+</style>
+<body>
+<div class="abc">
+    <div class="x" >1</div>
+    <div class="x" >2</div>
+    <div class="x" >3</div>
+    <div class="x" >4</div>
+    <div class="x" >5</div>
+</div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<head><title>flexbox column with nowrap</title></head>
+<style>
+.abc{
+    display:flex;
+    flex-direction: column; 
+    width: 600px;
+    height: 600px;
+    background-color: teal;
+    flex-wrap: nowrap;
+    
+    
+ }
+.x{
+    width: 100px;
+    height:100px;
+    background-color: yellowgreen;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+</style>
+<body>
+<div class="abc">
+    <div class="x" >1</div>
+    <div class="x" >2</div>
+    <div class="x" >3</div>
+    <div class="x" >4</div>
+    <div class="x" >5</div>
+</div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<head><title>flexbox column with wrap</title></head>
+<style>
+.abc{
+    display:flex;
+    flex-direction: column; 
+    width: 400px;
+    height: 600px;
+    background-color: teal;
+    flex-wrap: wrap;
+    
+    
+ }
+.x{
+    width: 100px;
+    height:100px;
+    background-color: yellowgreen;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+</style>
+<body>
+<div class="abc">
+    <div class="x" >1</div>
+    <div class="x" >2</div>
+    <div class="x" >3</div>
+    <div class="x" >4</div>
+    <div class="x" >5</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<head><title>flexbox column with wrap rev</title></head>
+<style>
+.abc{
+    display:flex;
+    flex-direction: column; 
+    width: 400px;
+    height: 600px;
+    background-color: teal;
+    flex-wrap: wrap-reverse;
+    
+    
+ }
+.x{
+    width: 100px;
+    height:100px;
+    background-color: yellowgreen;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+</style>
+<body>
+<div class="abc">
+    <div class="x" >1</div>
+    <div class="x" >2</div>
+    <div class="x" >3</div>
+    <div class="x" >4</div>
+    <div class="x" >5</div>
+</div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<head><title>flexbox row-reverse</title></head>
+<style>
+.abc{
+    display:flex;
+    flex-direction:row-reverse; 
+    width: 600px;
+    height: 600px;
+    background-color: teal;
+    flex-wrap: nowrap;
+    
+    
+ }
+.x{
+    width: 100px;
+    height:100px;
+    background-color: yellowgreen;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+</style>
+<body>
+<div class="abc">
+    <div class="x" >1</div>
+    <div class="x" >2</div>
+    <div class="x" >3</div>
+    <div class="x" >4</div>
+    <div class="x" >5</div>
+</div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<head><title>flexbox column-reverse</title></head>
+<style>
+.abc{
+    display:flex;
+    flex-direction:column-reverse; 
     width: 600px;
     height: 600px;
     background-color: teal;
@@ -127,6 +390,7 @@
 <style>
 .abc{
     display:flex;
+    width:160px;
     flex-direction:column; 
     background-color: teal;
     flex-wrap: nowrap;
@@ -153,22 +417,3 @@
 </body>
 </html>
 
-<!DOCTYPE html>
-<head><title>transition</title></head>
-<style>
-  div{
-      width: 150px;
-      height: 150px;
-      background-image: linear-gradient(teal,yellowgreen);
-  }
-  div:hover{
-      border-radius: 100px;
-      animation-duration: 2s;
-      background-image: linear-gradient(blue,red
-      );
-  }
-</style>
-<body>
- <div></div>
-</body>
-</html>
